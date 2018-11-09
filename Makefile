@@ -32,6 +32,10 @@ release-local:
 test-integration:
 	hack/test-integration.sh
 
+.PHONY: test-e2e
+test-e2e:
+	hack/test-end-to-end.sh
+
 .PHONY: verify
 verify:
 	hack/verify-gofmt.sh
